@@ -1,9 +1,22 @@
 ﻿
+using System.Diagnostics;
 
+int i = 0;
+bool lyckat = false;
+while (lyckat == false)
+{
+    Console.WriteLine("skriv ett heltal");
+    string s = Console.ReadLine();
+    
 
+    lyckat = int.TryParse(s , out int tal );
 
-
-
+    if (lyckat== false)
+    {
+        Console.WriteLine("DU måste skriva en helt tal");
+    }
+Console.WriteLine("Du skrev:" + s);
+}
 
 
 
