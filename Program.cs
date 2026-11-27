@@ -1,29 +1,62 @@
 ﻿
-using System.Diagnostics;
 
-int i = 0;
-bool lyckat = false;
-while (lyckat == false)
-{
-    Console.WriteLine("skriv ett heltal");
-    string s = Console.ReadLine();
+
+// fråga 6&7
+
+
+    
+ Console.WriteLine("Skriv ett heltal");
+ string talet = Console.ReadLine();
+
+ if(int.TryParse(talet, out int tal))
+ {
+
+     int dubbelt= tal * 2;
+      Console.WriteLine(dubbelt);
+ }
+ else
+ {
+     Console.WriteLine("Du behöver skriva in ett heltal");
+ }
+ 
+Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+
+
+// fråga 9
+
+// int i = 0;
+// bool lyckat = false;
+// while (lyckat == false)
+// {
+//     Console.WriteLine("skriv ett heltal");
+//     string s = Console.ReadLine();
     
 
-    lyckat = int.TryParse(s , out int tal );
+//     lyckat = int.TryParse(s , out int tal );
 
-    if (lyckat== false)
-    {
-        Console.WriteLine("DU måste skriva en helt tal");
-    }
-Console.WriteLine("Du skrev:" + s);
-}
-
-
+//     if (lyckat== false)
+//     {
+//         Console.WriteLine("DU måste skriva en helt tal");
+//     }
+// Console.WriteLine("Du skrev:" + s);
+// }
 
 
 
 
 
+
+// fråga 8
 // int i = 0;
 // while (i < 5)
 // {
